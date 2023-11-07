@@ -1,0 +1,25 @@
+# odev.5.berktugUnal
+public class TextManipulation {
+    public static String changeCase(String ) {
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < input.length(); i++) {
+            char d = input.charAt(i);
+            if (Character.isUpperCase(d)) {//büyük harfleri kücük yapar
+                result.append(Character.toLowerCase(d));
+            } else if (Character.isLowerCase(d)) {//kücük harfleri büyük yapar
+                result.append(Character.toUpperCase(d));
+            } else {
+                result.append(d);
+            }
+        }
+
+        return result.toString();
+    }
+
+    public static void main(String[] args) {
+        String girilenText = "Hello World! Meet Java Programming.";
+        String degistirilmisMetim = changeCase(inputText);//metotu cagırıR
+        System.out.println("Değiştirilmiş Metin: " + degistirilmisMetin);
+    }
+}
